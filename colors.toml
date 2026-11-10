@@ -1,0 +1,39 @@
+mode = "dark"
+
+# Solo Leveling: the Shadow Monarch's violet over the black of a dungeon at
+# night. Every colour is lifted from the wallpaper: shadow-soldier violet,
+# the blue of Jinwoo's eyes, the rose sky, and the gold and ember of his daggers.
+accent = "#9B7BFF"
+selection = "#33276B"
+selection_foreground = "#F4EFFF"
+muted = "#6A6388"
+
+background = "#0A0814"
+dark_background = "#07050E"
+darker_background = "#040309"
+lighter_background = "#1A1530"
+
+foreground = "#E2DBF4"
+dark_foreground = "#9087AD"
+light_foreground = "#CDC4E6"
+bright_foreground = "#F4EFFF"
+
+# Window borders run from shadow violet into mana blue, like the aura.
+hyprland_active_border = "rgba(9B7BFFee) rgba(6FA8FFee) 45deg"
+hyprland_inactive_border = "rgba(33276Baa)"
+
+red = "#E8557F"
+yellow = "#E3B873"
+orange = "#E58A4B"
+green = "#6FD3A6"
+cyan = "#8CC8F2"
+blue = "#6FA8FF"
+magenta = "#D67BE8"
+brown = "#A9826A"
+
+bright_red = "#FF7799"
+bright_yellow = "#F5D398"
+bright_green = "#93E8C0"
+bright_cyan = "#B4E0FF"
+bright_blue = "#96C0FF"
+bright_magenta = "#EBA4F7"

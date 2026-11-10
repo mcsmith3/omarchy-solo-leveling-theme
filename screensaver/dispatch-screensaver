@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Runs the active theme's own screensaver when it has installed one, and
+# Omarchy's stock screensaver otherwise. Shared by every theme that ships a
+# screensaver: each installs its launcher at
+# ~/.local/share/omarchy-<theme-name>/launch-screensaver.
+set -euo pipefail
+
+theme_name=""
+[[ ! -f $HOME/.local/state/omarchy/current/theme.name ]] || read -r theme_name < "$HOME/.local/state/omarchy/current/theme.name"
+
+launcher=""
+case "$theme_name" in
+  kingstonstrategicpartners)
+    launcher="$HOME/.local/share/omarchy-ksp/launch-screensaver"
+    ;;
+  *)
+    if [[ $theme_name =~ ^[a-z0-9][a-z0-9_-]*$ ]]; then
+      launcher="$HOME/.local/share/omarchy-$theme_name/launch-screensaver"
+    fi
+    ;;
+esac
+
+if [[ -n $launcher && -x $launcher ]]; then
+  exec "$launcher" "$@"
+fi
+exec omarchy-launch-screensaver "$@"

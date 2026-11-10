@@ -1,0 +1,9 @@
+# Solo Leveling: notifications arrive like the System's status windows —
+# a dark navy panel edged in mana blue rather than the violet window border.
+[notifications]
+background       = "#0B1026"
+background-alpha = 0.92
+text             = "#E2DBF4"
+border           = "#6FA8FF"
+border-alpha     = 1.0
+countdown        = "#8CC8F2"
